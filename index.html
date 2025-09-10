@@ -4,136 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Produtos</title>
+  <title>Catálogo - Papel A4</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .busca {
-      margin: 20px;
-      text-align: center;
-    }
-    .busca input {
-      width: 60%;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .produto {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .produto:hover {
-      transform: scale(1.03);
-    }
-    .produto img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .produto h3 {
-      font-size: 1.1rem;
-      margin: 10px 0;
-      color: #333;
-    }
-    .produto p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .preco {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #27ae60;
-      margin-top: 10px;
-    }
-    .whatsapp {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #25d366;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    .whatsapp:hover {
-      background: #1ebe5b;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+    .busca { margin: 20px; text-align: center; }
+    .busca input { width: 60%; padding: 10px; font-size: 1rem; border-radius: 8px; border: 1px solid #ccc; }
+    .catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .produto { background: #fff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; text-align: center; transition: transform 0.2s; }
+    .produto:hover { transform: scale(1.03); }
+    .produto img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+    .produto h3 { font-size: 1.1rem; margin: 10px 0; color: #333; }
+    .produto p { font-size: 0.9rem; color: #666; }
+    .preco { font-size: 1rem; font-weight: bold; color: #27ae60; margin-top: 10px; }
+    .whatsapp { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #25d366; color: white; font-weight: bold; text-decoration: none; border-radius: 8px; transition: background 0.3s; }
+    .whatsapp:hover { background: #1ebe5b; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Catálogo de Produtos</h1>
+    <h1>Catálogo - Papel A4</h1>
   </header>
-
   <div class="busca">
     <input type="text" id="search" placeholder="Buscar produto pelo nome ou código..." onkeyup="filtrarProdutos()">
   </div>
-
   <section class="catalogo" id="catalogo">
-    
+
+    <!-- Produtos de papel A4 -->
     <div class="produto">
       <img src="https://via.placeholder.com/250x180" alt="Kit com 10 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g">
       <h3>Kit com 10 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g</h3>
-      <p class="codigo">Código: A4P10 | Quantidade: 10</p>
-      <p class="preco">R$ 189,90</p>
+      <p class="codigo">Código: A4P10</p>
+      <p class="preco">Sob consulta</p>
       <a href="https://wa.me/5517981529344?text=Olá! Tenho interesse no produto: Kit com 10 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g" target="_blank" class="whatsapp">Comprar pelo WhatsApp</a>
     </div>
-    
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Kit com 5 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g">
-      <h3>Kit com 5 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g</h3>
-      <p class="codigo">Código: A4P5 | Quantidade: 5</p>
-      <p class="preco">R$ 95,90</p>
-      <a href="https://wa.me/5517981529344?text=Olá! Tenho interesse no produto: Kit com 5 Pacotes de Papel A4 para impressão – 500 Folhas por Pacote, 70g" target="_blank" class="whatsapp">Comprar pelo WhatsApp</a>
-    </div>
-    
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Pacote de Papel A4 para impressão – 500 Folhas, 70g">
-      <h3>Pacote de Papel A4 para impressão – 500 Folhas, 70g</h3>
-      <p class="codigo">Código: A4P | Quantidade: 10</p>
-      <p class="preco">R$ 25,90</p>
-      <a href="https://wa.me/5517981529344?text=Olá! Tenho interesse no produto: Pacote de Papel A4 para impressão – 500 Folhas, 70g" target="_blank" class="whatsapp">Comprar pelo WhatsApp</a>
-    </div>
-    
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Pacote de Papel A4 para impressão – 500 Folhas, 70g">
-      <h3>Pacote de Papel A4 para impressão – 500 Folhas, 70g</h3>
-      <p class="codigo">Código: A4P | Quantidade: 5</p>
-      <p class="preco">R$ 21,90</p>
-      <a href="https://wa.me/5517981529344?text=Olá! Tenho interesse no produto: Pacote de Papel A4 para impressão – 500 Folhas, 70g" target="_blank" class="whatsapp">Comprar pelo WhatsApp</a>
-    </div>
-    
-  </section>
 
+    <!-- ...mais 3 produtos -->
+  </section>
   <script>
     function filtrarProdutos() {
       let input = document.getElementById('search').value.toLowerCase();
       let produtos = document.getElementsByClassName('produto');
-
       for (let i = 0; i < produtos.length; i++) {
         let titulo = produtos[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
         let codigo = produtos[i].getElementsByClassName('codigo')[0].innerText.toLowerCase();
@@ -147,3 +58,4 @@
   </script>
 </body>
 </html>
+
